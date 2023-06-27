@@ -4,7 +4,10 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Happy Birthday</title>
+        <link rel="icon" href="assets/images/mina.jpg">
+        <link rel="apple-touch-icon" href="assets/images/mina.jpg">
+        <link rel="mask-icon" href="assets/images/mina.jpg">
+        <title>Happy Birthday Mina Nguyễn</title>
     </head>
     <!-- https://codepen.io/towc/pen/LGMGQG -->
     <style>
@@ -53,7 +56,7 @@
             hw = w / 2, // half-width
             hh = h / 2,
             opts = {
-                strings: ['HAPPY', 'BIRTHDAY!'],
+                strings: ['HAPPY', 'BIRTHDAY', "MINA", "NGUYEN"],
                 charSize: 30,
                 charSpacing: 35,
                 lineHeight: 40,
@@ -105,7 +108,7 @@
 
         function Letter(char, x, y) {
             this.char = char;
-            this.x = x;
+            this.x = x - 16;
             this.y = y;
 
             this.dx = -ctx.measureText(char).width / 2;
@@ -686,11 +689,11 @@
          */
         var settings = {
             particles: {
-                length: 500, // maximum amount of particles
+                length: 300, // maximum amount of particles
                 duration: 2, // particle duration in sec
                 velocity: 100, // particle velocity in pixels/sec
                 effect: -0.75, // play with this for a nice effect
-                size: 30, // particle size in pixels
+                size: 50, // particle size in pixels
             },
         };
         /*
@@ -908,7 +911,7 @@
 
                 context.closePath();
                 // create the fill
-                context.fillStyle = '#ea80b0';
+                context.fillStyle = '#FFC8DD';
                 context.fill();
                 // create the image
                 var image = new Image();
